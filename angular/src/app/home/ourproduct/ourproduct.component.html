@@ -1,0 +1,35 @@
+<section id="our_prd_fet" class="container our_pf">
+    <div class="container">
+        <div class="container">
+            <p>{{header_pre_text}}</p>
+            <h3>{{header_text}}</h3>
+            <p class="feaie_dtl">{{header_description}}</p>
+        </div>
+    </div>
+</section>
+
+<section id="accordian" class="container our_pf_accor" >
+    <!--Accordion wrapper-->
+        <div class="row" >
+            <div *ngFor="let product of our_product" class="col-sm-4 product_fet {{product.themeclass}}" >
+                <div class="col-sm-12"> 
+                    <h5>{{product.title}}</h5>
+                </div>   
+                <P> <span>{{product.priceperannum}}/</span>MO</P> 
+                <p>(up to {{product.numberofemployee}} EMPOLYEE)</p>
+                <span> + </span>
+                <P> <span>{{product.pricepermonth}}/</span>MO</P>
+                <p class="per_ad">PER ADDITIONAL EMPLOYEE</p>
+                <div class="col-sm-12 fold_pge">
+                    <a href="#">Buy Now</a>
+                    <h5>ALL FOUNDATION FEATURES 1</h5> 
+                    <ul *ngFor="let service of list_of_services">
+                        <li>{{service}}</li>
+                        <!--<li>ADVANCED REPORTS</li>
+                        <li>NOTIFICATIONS</li>
+                        <li>PRIORITY SUPPORT ASSISTANCE</li> -->
+                    </ul>
+                </div>
+            </div>          
+        </div>
+</section>

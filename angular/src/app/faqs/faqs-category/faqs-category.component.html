@@ -1,0 +1,120 @@
+<section id="side_bar_faq">
+  <div class="container"> 
+    <div class="col-sm-12 side_list">
+      <div class="col-sm-4">
+              <ul class="caterory_sub">
+                <li class="list_head">
+                <a href="#">Categories 
+                </a>
+              </li>                  
+                        <li  data-toggle="collapse" data-target="#products" class="collapsed active first_li">
+                        <a href="faqs#"><i class="fas fa-arrow-circle-right"></i> Getting Started <span class="arrow"></span></a>
+                      </li>
+                      <ul class="sub-menu collapse caterory_sub_menu" id="getting_started">
+                          <li class="active"><a href="#">CSS3 Animation</a></li>
+                          <li><a href="#">General</a></li>
+                          <li><a href="#">Buttons</a></li>
+                          <li><a href="#">Tabs & Accordions</a></li>
+                          <li><a href="#">Typography</a></li>
+                          <li><a href="#">FontAwesome</a></li>
+                          <li><a href="#">Slider</a></li>
+                          <li><a href="#">Panels</a></li>
+                          <li><a href="#">Widgets</a></li>
+                          <li><a href="#">Bootstrap Model</a></li>
+                      </ul>
+
+
+                      <li  data-toggle="collapse" data-target="#products1" class="collapsed active">
+                        <a href="#"><i class="fas fa-arrow-circle-right"></i>Eebera grown in polyhouse <span class="arrow"></span></a>
+                      </li>
+                      <ul class="sub-menu collapse caterory_sub_menu" id="products1">
+                          <li class="active"><a href="#">CSS3 Animation</a></li>
+                          <li><a href="#">General</a></li>
+                          <li><a href="#">Buttons</a></li>
+                          <li><a href="#">Tabs & Accordions</a></li>
+                          <li><a href="#">Typography</a></li>
+                          <li><a href="#">FontAwesome</a></li>
+                          <li><a href="#">Slider</a></li>
+                          <li><a href="#">Panels</a></li>
+                          <li><a href="#">Widgets</a></li>
+                          <li><a href="#">Bootstrap Model</a></li>
+                      </ul>
+
+                      <li  data-toggle="collapse" data-target="#products2" class="collapsed active">
+                        <a href="#"><i class="fas fa-arrow-circle-right"></i> Commerical varielies <span class="arrow"></span></a>
+                      </li>
+                      <ul class="sub-menu collapse caterory_sub_menu" id="products2">
+                          <li class="active"><a href="#">CSS3 Animation</a></li>
+                          <li><a href="#">General</a></li>
+                          <li><a href="#">Buttons</a></li>
+                          <li><a href="#">Tabs & Accordions</a></li>
+                          <li><a href="#">Typography</a></li>
+                          <li><a href="#">FontAwesome</a></li>
+                          <li><a href="#">Slider</a></li>
+                          <li><a href="#">Panels</a></li>
+                          <li><a href="#">Widgets</a></li>
+                          <li><a href="#">Bootstrap Model</a></li>
+                      </ul>
+
+                      <li  data-toggle="collapse" data-target="#products3" class="collapsed active">
+                        <a href="#"><i class="fas fa-arrow-circle-right"></i> Latest Dendrobium <span class="arrow"></span></a>
+                      </li>
+                      <ul class="sub-menu collapse caterory_sub_menu" id="products3">
+                          <li class="active"><a href="#">CSS3 Animation</a></li>
+                          <li><a href="#">General</a></li>
+                          <li><a href="#">Buttons</a></li>
+                          <li><a href="#">Tabs & Accordions</a></li>
+                          <li><a href="#">Typography</a></li>
+                          <li><a href="#">FontAwesome</a></li>
+                          <li><a href="#">Slider</a></li>
+                          <li><a href="#">Panels</a></li>
+                          <li><a href="#">Widgets</a></li>
+                          <li><a href="#">Bootstrap Model</a></li>
+                      </ul>
+
+
+                      <li  data-toggle="collapse" data-target="#products4" class="collapsed active">
+                        <a href="#"><i class="fas fa-arrow-circle-right"></i> Commerically Important <span class="arrow"></span></a>
+                      </li>
+                      <ul class="sub-menu collapse caterory_sub_menu" id="products4">
+                          <li class="active"><a href="#">CSS3 Animation</a></li>
+                          <li><a href="#">General</a></li>
+                          <li><a href="#">Buttons</a></li>
+                          <li><a href="#">Tabs & Accordions</a></li>
+                          <li><a href="#">Typography</a></li>
+                          <li><a href="#">FontAwesome</a></li>
+                          <li><a href="#">Slider</a></li>
+                          <li><a href="#">Panels</a></li>
+                          <li><a href="#">Widgets</a></li>
+                          <li><a href="#">Bootstrap Model</a></li>
+                      </ul>
+          </ul>
+
+      </div>
+      <div class="col-sm-8 sub_acc">
+      <div class="col-sm-12">
+          <h4>Frequently Asked Questions</h4>
+          <p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus?</p>    
+      </div>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default" *ngFor="let faq of FAQS">
+            <div class="panel-heading" role="tab" id="heading{{faq.id}}">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{faq.id}}" aria-expanded="false" aria-controls="collapse{{faq.id}}">
+                        <i class="more-less fal fa-plus"></i>
+                        {{faq.question}} 
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse{{faq.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{faq.id}}">
+                <div class="panel-body">
+                    {{faq.answer}}
+                </div>
+            </div>
+        </div>     
+    </div><!-- panel-group -->
+          
+      </div>
+    </div>
+  </div> 
+</section>
